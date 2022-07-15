@@ -79,10 +79,5 @@ namespace FileSystemVisitor
             traversionStatusFiles.Text = e.FoundFiles;
             Refresh();
         }
-
-        private void abortButton_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

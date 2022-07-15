@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace FileSystemVisitor
 {
-    class FileSystemVisitor
+    public class FileSystemVisitor
     {
         public event EventHandler<TraversionStatusEventArgs> TraversionStatusEventHandler;
 
@@ -23,7 +23,7 @@ namespace FileSystemVisitor
 
         public string[] GetFileSystemEntries(string path)
         {
-            var fileSystemEntries = GetLeavesByDepth(path).Where(x => x != path).ToArray();
+            var fileSystemEntries = GetLeavesByDepth(path).Where(x => x != path && !string.IsNullOrWhiteSpace(x)).ToArray();
             return fileSystemEntries;
         }
         private IEnumerable<string> GetLeavesByDepth(string rootPath)
@@ -72,7 +72,7 @@ namespace FileSystemVisitor
         }
     }
 
-    class TraversionStatusEventArgs : EventArgs
+    public class TraversionStatusEventArgs : EventArgs
     {
         public string Message { get; set; }
         public string FoundFiles{ get; set; }

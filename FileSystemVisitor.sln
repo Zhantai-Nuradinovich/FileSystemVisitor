@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32602.291
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystemVisitor", "FileSystemVisitor\FileSystemVisitor.csproj", "{FBE52F7D-8D76-4328-BBDF-267674E315D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileSystemVisitor", "FileSystemVisitor\FileSystemVisitor.csproj", "{FBE52F7D-8D76-4328-BBDF-267674E315D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystemVisitor.Tests", "FileSystemVisitor.Tests\FileSystemVisitor.Tests.csproj", "{3028CA86-5960-4843-B866-66F29F501F01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FBE52F7D-8D76-4328-BBDF-267674E315D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBE52F7D-8D76-4328-BBDF-267674E315D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBE52F7D-8D76-4328-BBDF-267674E315D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3028CA86-5960-4843-B866-66F29F501F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3028CA86-5960-4843-B866-66F29F501F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3028CA86-5960-4843-B866-66F29F501F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3028CA86-5960-4843-B866-66F29F501F01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
